@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller">
+  <scene>
+    <Scene>
+      <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+          <MenuItem mnemonicParsing="false" text="New" />
+          <MenuItem mnemonicParsing="false" text="Open…" />
+          <Menu mnemonicParsing="false" text="Open Recent" />
+          <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Close" />
+          <MenuItem mnemonicParsing="false" text="Save" />
+          <MenuItem mnemonicParsing="false" text="Save As…" />
+          <MenuItem mnemonicParsing="false" text="Revert" />
+          <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Preferences…" />
+          <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <MenuItem mnemonicParsing="false" text="Undo" />
+          <MenuItem mnemonicParsing="false" text="Redo" />
+          <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Cut" />
+          <MenuItem mnemonicParsing="false" text="Copy" />
+          <MenuItem mnemonicParsing="false" text="Paste" />
+          <MenuItem mnemonicParsing="false" text="Delete" />
+          <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Select All" />
+          <MenuItem mnemonicParsing="false" text="Unselect All" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+        </Menu>
+      </MenuBar>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+               <AnchorPane layoutX="-2.0" prefHeight="199.0" prefWidth="173.0" style="-fx-background-color: white;">
+                     <Button fx:id="boton1" layoutX="115.0" layoutY="55.0" mnemonicParsing="false" onAction="#bx1" text="+" />
+                     <TextField fx:id="text1" layoutX="7.0" layoutY="27.0" onMouseClicked="#band1" prefHeight="25.0" prefWidth="73.0" promptText="Numero1" />
+                     <TextField fx:id="text2" layoutX="97.0" layoutY="27.0" onMouseClicked="#band2" prefHeight="25.0" prefWidth="74.0" promptText="Numero2" />
+                     <TextField fx:id="resultado" layoutX="55.0" layoutY="157.0" prefHeight="25.0" prefWidth="104.0" promptText="      resultado" />
+            <Button fx:id="boton2" layoutX="114.0" layoutY="130.0" mnemonicParsing="false" onAction="#bx2" prefHeight="25.0" prefWidth="26.0" text="-" />
+            <Button fx:id="boton3" layoutX="115.0" layoutY="105.0" mnemonicParsing="false" onAction="#bx3" prefHeight="25.0" prefWidth="25.0" text="/" />
+            <Button fx:id="boton4" layoutX="115.0" layoutY="80.0" mnemonicParsing="false" onAction="#bx4" prefHeight="25.0" prefWidth="26.0" text="X" />
+            <Button fx:id="bv1" layoutX="37.0" layoutY="55.0" mnemonicParsing="false" onAction="#set1" prefHeight="25.0" prefWidth="27.0" text="1" />
+            <Button fx:id="bv2" layoutX="64.0" layoutY="55.0" mnemonicParsing="false" onAction="#set2" prefHeight="25.0" prefWidth="26.0" text="2" />
+            <Button fx:id="bv3" layoutX="90.0" layoutY="55.0" mnemonicParsing="false" onAction="#set3" prefHeight="25.0" prefWidth="26.0" text="3" />
+            <Button fx:id="bv4" layoutX="38.0" layoutY="80.0" mnemonicParsing="false" onAction="#set4" prefHeight="25.0" prefWidth="28.0" text="4" />
+            <Button fx:id="bv5" layoutX="64.0" layoutY="80.0" mnemonicParsing="false" onAction="#set5" prefHeight="25.0" prefWidth="28.0" text="5" />
+            <Button fx:id="bv6" layoutX="90.0" layoutY="80.0" mnemonicParsing="false" onAction="#set6" prefHeight="25.0" prefWidth="25.0" text="6" />
+            <Button fx:id="bv7" layoutX="38.0" layoutY="105.0" mnemonicParsing="false" onAction="#set7" prefHeight="25.0" prefWidth="27.0" text="7" />
+            <Button fx:id="bv8" layoutX="64.0" layoutY="105.0" mnemonicParsing="false" onAction="#set8" prefHeight="25.0" prefWidth="27.0" text="8" />
+            <Button fx:id="bv9" layoutX="90.0" layoutY="105.0" mnemonicParsing="false" onAction="#set9" prefHeight="25.0" prefWidth="25.0" text="9" />
+            <Button fx:id="bv0" layoutX="65.0" layoutY="130.0" mnemonicParsing="false" onAction="#set0" prefHeight="25.0" prefWidth="25.0" text="0" />
+            <Button fx:id="bvborrar" layoutX="38.0" layoutY="130.0" mnemonicParsing="false" onAction="#borrar" prefHeight="25.0" prefWidth="28.0" text="&lt;" />
+            <Button fx:id="bvpoint" layoutX="89.0" layoutY="130.0" mnemonicParsing="false" onAction="#setpoint" prefHeight="25.0" prefWidth="25.0" text="." />
+            <Text fx:id="textomedio" layoutX="86.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" wrappingWidth="26.13671875" />
+            <Button fx:id="igual" layoutX="28.0" layoutY="157.0" mnemonicParsing="false" onAction="#resultado" prefHeight="25.0" prefWidth="26.0" text="=" />
+               </AnchorPane>
+    </Scene>
+  </scene>
+</Stage>
